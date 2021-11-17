@@ -18,10 +18,18 @@ jobs:
       - name: What is in the cache?
         run: npm config get cache
       # Attempt to restore from cache
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-test-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-test-${{ env.cache-name }}-
+            ${{ runner.os }}-test-
+            ${{ runner.os }}-
 
       # Install dependencies
       - name: Fetching Dependencies...
         run: npm ci
-      # Clean Cache
-      - name: Clean cache
-        run: npm cache clean --force

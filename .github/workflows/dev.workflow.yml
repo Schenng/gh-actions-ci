@@ -33,3 +33,6 @@ jobs:
       # Install dependencies
       - name: Fetching Dependencies...
         run: npm ci
+      # Clean Cache
+      - name: Clean cache
+        run: npm cache clean --force

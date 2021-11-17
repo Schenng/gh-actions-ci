@@ -1,7 +1,7 @@
 {
   "name": "gh-actions-ci",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test GH actions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

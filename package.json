@@ -1,0 +1,22 @@
+{
+  "name": "gh-actions-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schenng/gh-actions-ci.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Schenng/gh-actions-ci/issues"
+  },
+  "homepage": "https://github.com/Schenng/gh-actions-ci#readme",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}

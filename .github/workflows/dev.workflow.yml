@@ -15,7 +15,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
-
+      - name: What is in the cache?
+        run: npm config get cache
       # Attempt to restore from cache
       - name: Cache node modules
         uses: actions/cache@v2
